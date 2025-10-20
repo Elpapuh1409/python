@@ -1,0 +1,20 @@
+# Activar entorno virtual (PowerShell)
+.\env\Scripts\activate
+
+# Instalar Transformers
+pip install --no-cache-dir transformers
+
+# Desinstalar Transformers (por si hay problemas)
+pip uninstall transformers -y
+
+# Limpiar caché de pip
+pip cache purge
+
+# Instalar hf_xet para mejorar descargas de modelos (opcional)
+pip install "huggingface_hub[hf_xet]" 
+
+# Instalar PyTorch (CPU)
+pip install torch
+
+# Instalar Matplotlib para gráficas
+pip install matplotlib
